@@ -15,7 +15,7 @@ Before you begin, please ensure you have the following installed:
 ## Algorithms' implementation
 
 Full implementation of the code is in this repository. 
-* ExaBan and AdaBan are available under BanzhafAlgorithms.py
+* ExaBan and AdaBan and ItchiBan are available under BanzhafAlgorithms.py
 * implementation of adaptations of Monte-Carlo sampling and CNFProxy are available under approximationAlgorithms.py
 * Implementation of SIG22 Knowledge compilation algorithm is available under SIG22.py
 
