@@ -19,9 +19,9 @@ Full implementation of the code is in this repository.
 * implementation of adaptations of Monte-Carlo sampling and CNFProxy are available under approximationAlgorithms.py
 * Implementation of SIG22 Knowledge compilation algorithm is available under SIG22.py
 
-## Results
-TODO - ADD
+## Lineages of figure 5 in the article
+All the lineages of figure 5 appear in the folder Fig5_Lineages
 
-## Examples
+## Example
 
 TODO - Add
