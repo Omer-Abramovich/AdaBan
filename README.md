@@ -2,7 +2,7 @@
 This repository is the official repository for the paper "Banzhaf Values for Facts in Query Answering"
 
 ## Extended version of the paper
-Extended version of the paper is available under Banzhaf Values for Facts in Query Answering.pdf
+Extended version of the paper is available under [a relative link](Banzhaf_Values_for_Facts_in_Query_Answering.pdf)
 
 ## Prerequisites
 
