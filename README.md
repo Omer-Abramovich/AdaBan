@@ -23,4 +23,4 @@ Full implementation of the code is in this repository.
 All the lineages of figure 5 appear in the folder Fig5_Lineages
 
 ## Examples
-* Example from appendix D showing Banzhaf based ranking and Shapley based ranking don't conicide is [here](Banzhaf_and_Shapley_order.ipynb)
+* Example from appendix D showing Banzhaf based ranking and Shapley based ranking don't conicide is [here](notebooks/Banzhaf_and_Shapley_order.ipynb)
