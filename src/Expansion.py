@@ -30,7 +30,7 @@ class Expansion:
         depth = self.dtree.hierarchical_expand()
         return depth
 
-    def calculate_banzahf(self):
+    def calculate_banzahf(self, timeout=3600):
         if self.dtree.variable_count == 0:
             return {"expansion_time": 0, "calculation_time": 0, "depth": 0, "banzhaf_values": {}}
         start = time.time()
@@ -44,7 +44,7 @@ class Expansion:
         for fact in self.dtree.variables:
             banzhaf_vals[fact] = self.dtree.critical_assignments_fact(fact)
             mid = time.time()
-            if mid - start > 1200:
+            if mid - start > timeout:
                 return {"expansion_time": expansion_time, "calculation_time": "Failed", "depth": depth,
                         "banzhaf_values": banzhaf_vals}
         end = time.time()

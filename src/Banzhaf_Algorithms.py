@@ -9,6 +9,10 @@ def calculate_banzhaf(dnf):
     return Expansion(dnf).calculate_banzahf()
 
 
+def calculate_shapley(dnf):
+    return Expansion(dnf).calculate_shapley()
+
+
 def ADABAN(dnf, epsilon=0.1, timeout=3600):
     start = time.time()
     expansion = Expansion(dnf)
