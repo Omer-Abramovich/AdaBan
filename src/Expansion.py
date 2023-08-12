@@ -32,11 +32,11 @@ class Expansion:
 
     def calculate_banzahf(self, timeout=3600):
         if self.dtree.variable_count == 0:
-            return {"expansion_time": 0, "calculation_time": 0, "depth": 0, "banzhaf_values": {}}
+            return {"status": "Success", "expansion_time": 0, "calculation_time": 0, "depth": 0, "banzhaf_values": {}}
         start = time.time()
         depth = self.perform_expansion()
         if depth < 0:
-            return {"expansion_time": -1, "calculation_time": 0, "depth": -1 * depth, "banzhaf_values": {}}
+            return {"status": "Failed", "expansion_time": -1, "calculation_time": 0, "depth": -1 * depth, "banzhaf_values": {}}
         end = time.time()
         expansion_time = end - start
         banzhaf_vals = {}
@@ -45,11 +45,11 @@ class Expansion:
             banzhaf_vals[fact] = self.dtree.critical_assignments_fact(fact)
             mid = time.time()
             if mid - start > timeout:
-                return {"expansion_time": expansion_time, "calculation_time": "Failed", "depth": depth,
+                return {"status": "Failed", "expansion_time": expansion_time, "calculation_time": "Failed", "depth": depth,
                         "banzhaf_values": banzhaf_vals}
         end = time.time()
         calc_time = end - start
-        return {"expansion_time": expansion_time, "calculation_time": calc_time, "depth": depth,
+        return {"status": "Success", "expansion_time": expansion_time, "calculation_time": calc_time, "depth": depth,
                 "banzhaf_values": banzhaf_vals}
 
     def calculate_shapley(self):

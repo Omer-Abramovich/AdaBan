@@ -5,8 +5,8 @@ from DNF import DNF
 from Expansion import Expansion
 
 
-def calculate_banzhaf(dnf):
-    return Expansion(dnf).calculate_banzahf()
+def calculate_banzhaf(dnf, timeout=3600):
+    return Expansion(dnf).calculate_banzahf(timeout)
 
 
 def calculate_shapley(dnf):
@@ -47,7 +47,7 @@ def ADABAN(dnf, epsilon=0.1, timeout=3600):
         if mid_time - start > timeout:
             return {"status": "Failed", "depth": depth, "remaining facts": len(relevant_facts)}
 
-    return {"values": bounds_dict}
+    return {"status": "Success", "values": bounds_dict}
 
 
 def Adaban_single_var(dnf: DNF, var):
