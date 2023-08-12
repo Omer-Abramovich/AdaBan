@@ -9,7 +9,6 @@ Extended version of the paper is available under [Banzhaf_Values_for_Facts_in_Qu
 Before you begin, please ensure you have the following installed:
 
 - Python (>=3.9)
-- (TODO - ADD) - List any specific libraries and their versions required to run the code.
 - For obtaining provenance expressions of output tuples from queries please refer to https://github.com/navefr/ShapleyForDbFacts
 
 ## Algorithms' implementation
@@ -24,3 +23,6 @@ All the lineages of figure 5 appear in the folder Fig5_Lineages
 
 ## Examples
 * Example from appendix D showing Banzhaf based ranking and Shapley based ranking don't conicide is [here](notebooks/Banzhaf_and_Shapley_order.ipynb)
+
+## Experiments
+* Example notebook on how to run experiments of our algorithms can be found [here](notebooks/Experiments.ipynb)
