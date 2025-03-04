@@ -23,6 +23,3 @@ All the lineages of figure 5 appear in the folder Fig5_Lineages
 
 ## Examples
 * Example from appendix D showing Banzhaf based ranking and Shapley based ranking don't conicide is [here](notebooks/Banzhaf_and_Shapley_order.ipynb)
-
-## Experiments
-* Example notebook on how to run experiments of our algorithms can be found [here](notebooks/Experiments.ipynb)
